@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/112155072?v=4" type="image/x-icon">
+    <title>Portofolio</title>
+</head>
+<body>
+    <div class="container">
+        <nav id="header">
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#about" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+        <main class="wrapper">>
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class="featured-name">
+                        <p>I'm <span class="typedText"></span></p>
+                    </div>
+                    <div class="featured-text-info">
+                        <p>Halo, perkenalkan nama saya Kevin Rahul Juandri. Saya memiliki minat besar dalam bidang informatika, terutama pada pengembangan web dengan fokus pada frontend development.
+                        </p>
+                    </div>
+                    <div class="social_icons">
+                        <div class="social_icons">
+                            <a href="https://www.instagram.com/kevinjuandri_?igsh=dnhqcm5uaW5nNWt1" target="_blank" class="icon">
+                                <i class="uil uil-instagram"></i>
+                            </a>
+                            <a href="https://github.com/Kevinjuandri" target="_blank" class="icon">
+                                <i class="uil uil-github"></i>
+                            </a>
+                            <a href="https://wa.me/6287843290571" target="_blank" class="icon">
+                                <i class="uil uil-whatsapp"></i>
+                            </a>
+                        </div>                        
+            </section>
+            <section class="section" id="about">
+                <div class="top-header">
+                    <h1>About Me</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="about-info">
+                            <h3>My introduction</h3>
+                            <p>I am fluent in HTML, CSS and JavaScript, as well as other advanced frameworks and libraries, which allow me to implement interactive features.</p>
+                        </div>
+                    </div>                 
+                    <div class="col">
+                        <div class="skills-box">
+                            <div class="skills-header">
+                            </div>
+                            <style>
+                            .skills-container {
+                                position: relative;
+                                width: 400px;
+                                height: 400px;
+                                overflow: hidden;
+                                display: flex;
+                            }
+                            .skills-container .center {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                background-color: #222;
+                                color: #fff;
+                                padding: 20px 40px;
+                                border-radius: 100px;
+                                box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+                                font-size: 24px;
+                                font-weight: bold;
+                                animation: pulse 2s infinite;
+                            }
+                            @keyframes pulse {
+                                0% { transform: translate(-50%, -50%) scale(1); }
+                                50% { transform: translate(-50%, -50%) scale(1.05); }
+                                100% { transform: translate(-50%, -50%) scale(1); }
+                            }
+                            .skills-container .skill {
+                                position: absolute;
+                                width: 50px;
+                                height: 50px;
+                                background-color: #fff;
+                                border-radius: 50%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                animation: float 3s infinite;
+                            }
+                            @keyframes float {
+                                0% { transform: translateY(0); }
+                                50% { transform: translateY(-10px); }
+                                100% { transform: translateY(0); }
+                            }
+                            .skills-container .skill img {
+                                width: 30px;
+                                height: 30px;
+                            }
+                            .skills-container .skill:nth-child(1) { top: 10%; left: 10%; }
+                            .skills-container .skill:nth-child(2) { top: 10%; right: 10%; }
+                            .skills-container .skill:nth-child(3) { top: 50%; left: 0; transform: translateY(-50%); }
+                            .skills-container .skill:nth-child(4) { top: 50%; right: 0; transform: translateY(-50%); }
+                            .skills-container .skill:nth-child(5) { bottom: 10%; left: 10%; }
+                            .skills-container .skill:nth-child(6) { bottom: 10%; right: 10%; }
+                            .skills-container .line {
+                                position: absolute;
+                                width: 2px;
+                                height: 100px;
+                                background-color: #666;
+                                opacity: 0.5;
+                                transition: height 0.3s ease;
+                            }
+                            .skills-container .line:hover {
+                                height: 150px;
+                            }
+                            .skills-container .line:nth-child(7) { top: 20%; left: 20%; transform: rotate(45deg); }
+                            .skills-container .line:nth-child(8) { top: 20%; right: 20%; transform: rotate(-45deg); }
+                            .skills-container .line:nth-child(9) { top: 50%; left: 0; transform: translateY(-50%); }
+                            .skills-container .line:nth-child(10) { top: 50%; right: 0; transform: translateY(-50%); }
+                            .skills-container .line:nth-child(11) { bottom: 20%; left: 20%; transform: rotate(-45deg); }
+                            .skills-container .line:nth-child(12) { bottom: 20%; right: 20%; transform: rotate(45deg); }
+                            .skills-container .line:nth-child(13) { top: 30%; left: 0; transform: translateY(-50%); }
+                            .skills-container .line:nth-child(14) { top: 30%; right: 0; transform: translateY(-50%); }
+                        
+                        </style>
+                        <div class="skills-container">
+                            <div class="center">Skills</div>
+                            <div class="skill"><img src="html5-logo-24.png" alt="HTML" /></div>
+                            <div class="skill"><img src="file-css-solid-24.png" alt="CSS" /></div>
+                            <div class="skill"><img src="javascript-logo-24.png" alt="JavaScript" /></div>
+                            <div class="skill"><img src="php-logo-24 (1).png" alt="PHP" /></div>
+                            <div class="skill"><img src="c-plus-plus-logo-24.png" alt="Database" /></div>
+                            <div class="skill"><img src="python-logo-24.png" alt="MySQL" /></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                  </div>
+            </section>
+            <section class="section" id="projects">
+                <div class="top-header">
+                    <h1>Projects</h1>
+                </div>
+                    <div class="project-container">
+                     <div onclick="window.location.href='https://github.com/Kevinjuandri'"class="project-box">
+                                <i class="uil uil-briefcase-alt"></i>
+                                <h3>Completed</h3>
+                                <label>Github Project</label>
+                            </div>
+                        </a>
+                    <div class="project-box">
+                        <i class="uil uil-award"></i>
+                        <h3>Experience</h3>
+                        <label>1 years in programming</label>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="contact">
+                <div class="top-header">
+                    <h1>Get in touch</h1>
+                    <span>You can ask me about programming</span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="contact-info">
+                            <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                            <p><i class="uil uil-envelope"></i> Kevinrahuljuandri765@gmail.com</p>
+                            <p><i class="uil uil-phone"></i> +62 878-4329-0571</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-control">
+                            <div class="form-inputs">
+                                <input type="text" class="input-field" placeholder="Name">
+                                <input type="text" class="input-field" placeholder="Email">
+                            </div>
+                            <div class="text-area">
+                                <textarea placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-button">
+                                <button class="btn">Send <i class="uil uil-message"></i></button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <div class="social_icons">
+                    <a href="https://www.instagram.com/kevinjuandri_?igsh=dnhqcm5uaW5nNWt1" target="_blank" class="icon">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="https://github.com/Kevinjuandri" target="_blank" class="icon">
+                        <i class="uil uil-github"></i>
+                    </a>
+                    <a href="https://wa.me/6287843290571" target="_blank" class="icon">
+                        <i class="uil uil-whatsapp"></i>
+                    </a>
+                </div>                
+            </div>
+            <!-- Chatbot Toggle Button -->
+<button id="chatbot-toggle-btn" onclick="toggleChatbot()">
+    <i class="uil uil-message"></i>
+</button>
+
+<!-- Chatbot Container -->
+<div id="chatbot-container">
+    <div id="chatbot-header">
+        <span>Chatbot</span>
+        <i class="uil uil-times" onclick="toggleChatbot()"></i>
+    </div>
+    <div id="chatbot-content">
+        <div id="chatbot-messages"></div>
+    </div>
+    <div id="chatbot-input">
+        <input type="text" id="user-input" placeholder="Tulis pesan...">
+        <button onclick="sendMessage()">Kirim</button>
+    </div>
+</div>
+ <div class="bottom-footer">
+                <p>Copyright © <a href="#home" style="text-decoration: none;">Kevin Rahul Juandri</a> - All rights reserved
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+
+</html>
